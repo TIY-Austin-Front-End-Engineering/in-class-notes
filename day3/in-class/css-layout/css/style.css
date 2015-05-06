@@ -1,0 +1,77 @@
+nav {
+	width: 100px;
+	padding: 20px;
+	background: #ccc;
+	float: left;
+}
+nav > a {
+	display: block;
+}
+
+main {
+	padding: 20px;
+	background: #FFFEB2;
+	width: 500px;
+	float: right;
+}
+
+div {
+	background: black;
+	overflow: hidden;
+	padding: 30px;
+}
+
+.inline-block-test {
+	background: #ccc;
+}
+
+.inline-block-test div {
+	display: inline-block;
+	background: #333;
+	color: #ccc;
+}
+
+.float-test {
+	background: #ccc;
+	overflow: hidden;
+}
+
+.float-test div {
+	float: left;
+	background: #333;
+	color: #ccc;
+}
+
+/*main {
+	padding: 10px;
+	background: pink;
+	overflow: hidden;
+}
+div {
+	width: 70px;
+	height: 50px;
+	background: blue;
+	float: left;
+	margin-right: 10px;
+}
+
+section {
+	background: red;
+	height: 50px
+}
+
+/*span, div {
+	border: 1px solid black;
+}*/
+
+/*span {
+	border: 1px solid black;
+	height: 50px;
+}
+
+div {
+	border: 1px solid black;
+	height: 50px;
+}*/
+
+*/

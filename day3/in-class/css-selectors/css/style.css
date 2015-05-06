@@ -1,0 +1,45 @@
+/*.active {
+	font-weight: bold;
+}
+
+nav > a {
+	color: green;
+}
+
+#biography {
+	color: black;
+}
+
+.even {
+	color: rgb(80, 187, 80);
+}
+
+div li {
+	background: red;
+}
+
+section .mylist div {
+	background: blue;
+	width: 70px;
+	height: 30px;
+	margin-bottom: 10px
+}
+
+section {
+	background: red;
+	padding: 10px;
+}*/
+/*
+* {
+	margin: 0;
+}
+
+section > * {
+	background: blue;
+	padding-left: 20px;
+	color: #fff;
+}*/
+
+section + div {
+	font-size: 20px;
+}
