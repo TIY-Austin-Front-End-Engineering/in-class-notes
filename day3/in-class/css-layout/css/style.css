@@ -1,4 +1,30 @@
-nav {
+section div.box {
+	width: 100px;
+	height: 70px;
+	background: #666;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-size: 30px;
+	color: #fff;
+	float: left;
+}
+
+section > div {
+	overflow: hidden;
+}
+
+/*.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.b {
+	clear: both;
+}*/
+/*nav {
 	width: 100px;
 	padding: 20px;
 	background: #ccc;
@@ -74,4 +100,4 @@ div {
 	height: 50px;
 }*/
 
-*/
+*/*/

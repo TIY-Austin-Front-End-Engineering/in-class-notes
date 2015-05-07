@@ -1,0 +1,17 @@
+div {
+	float: left;
+	text-align: center;
+	color: #fff;
+	padding: 20px 0;
+	background: blue;
+	margin-right: 10px;
+	width: 100px;
+}
+
+.c {
+	clear: right;
+}
+
+.g {
+	float: right;
+}

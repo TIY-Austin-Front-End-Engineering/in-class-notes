@@ -1,0 +1,14 @@
+.my-block {
+	text-align: center;
+	height: 100px;
+	background: black;
+	padding: 100px 0;
+}
+
+.child {
+	width: 200px;
+	display: inline-block;
+	text-align: center;
+	color: #fff;
+	background: red;
+}
