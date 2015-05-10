@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,EAAG;EACF,SAAS,EAAE,KAAK;;AAGjB,EAAG;EACF,SAAS,EAAE,IAAI",
+"sources": ["../fancy/other.scss"],
+"names": [],
+"file": "other.css"
+}

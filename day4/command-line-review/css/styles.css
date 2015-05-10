@@ -1,0 +1,18 @@
+@import url(normalize.css);
+div {
+  background: #333;
+  height: 30px;
+  width: 100px;
+  margin-bottom: 20px; }
+
+.a {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
+
+.b {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px; }
+
+/*# sourceMappingURL=styles.css.map */

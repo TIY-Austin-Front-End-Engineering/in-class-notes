@@ -1,0 +1,22 @@
+@import 'normalize.css';
+
+@mixin foo($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+div {
+	background: #333;
+	height: 30px;
+	width: 100px;
+	margin-bottom: 20px;
+}
+
+.a {
+	@include foo(10px);
+}
+
+.b {
+	@include foo(20px);
+}

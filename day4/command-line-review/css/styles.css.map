@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAQ,0BAAe;AAQvB,GAAI;EACH,UAAU,EAAE,IAAI;EAChB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,KAAK;EACZ,aAAa,EAAE,IAAI;;AAGpB,EAAG;EAZF,qBAAqB,EAaR,IAAI;EAZjB,kBAAkB,EAYL,IAAI;EAXjB,aAAa,EAWA,IAAI;;AAGlB,EAAG;EAhBF,qBAAqB,EAiBR,IAAI;EAhBjB,kBAAkB,EAgBL,IAAI;EAfjB,aAAa,EAeA,IAAI",
+"sources": ["../fancy/styles.scss"],
+"names": [],
+"file": "styles.css"
+}
