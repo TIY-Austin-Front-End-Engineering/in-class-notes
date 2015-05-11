@@ -1,0 +1,15 @@
+input  {
+	display: block;
+}
+input[type="password"] {
+	border: 2px solid #333;
+}
+
+label[data-my-attribute="foo"] {
+	background: blue;
+}
+
+button {
+	display: block;
+	padding: 10px;
+}
