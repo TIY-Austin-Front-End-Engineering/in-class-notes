@@ -1,0 +1,40 @@
+.my-text.foo {
+	font-size: 40px;
+}
+
+#id1 {
+	font-size: 70px;
+}
+
+
+p {
+	font-size: 10px;
+}
+
+.foo.bar.baz {
+	font-size: 3px;
+}
+
+.baz {
+	font-size: 16px;
+}
+
+.foo .bar .baz {
+	font-size: 50px;
+}
+
+.bar .baz {
+	font-size: 25px;
+}
+
+#id2 {
+	font-size: 10px;
+}
+
+.foo1 div.baz1 {
+	font-size: 40px;
+}
+
+.bar1 .baz1 {
+	font-size: 20px;
+}

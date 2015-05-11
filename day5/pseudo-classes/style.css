@@ -1,0 +1,45 @@
+button {
+	padding: 10px;
+	background: #333;
+	color: #ccc;
+	border: 0;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #ccc;
+	color: #333;
+}
+
+button:active {
+	background: green;
+}
+
+button:focus {
+	outline: 2px solid red;
+}
+
+input:focus {
+	border: 2px solid #333;
+}
+
+input[type="checkbox"]:checked {
+	display: block;
+	padding: 20px;
+}
+
+input:disabled {
+	background: #ccc;
+}
+
+ul li:nth-child(3n+1) {
+	font-weight: bold;
+}
+
+ul li:last-child {
+	color: pink;
+}
+
+ul li:first-child {
+	text-decoration: underline;
+}

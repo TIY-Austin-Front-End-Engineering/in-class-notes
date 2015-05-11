@@ -1,16 +1,25 @@
+button {
+	display: block;
+}
+
 /* Button 1 */
-.btn1 {
+.btn1, .btn1a {
 	padding: 20px;
 	background: #333;
 	border: 0;
 	font-weight: bold;
 	color: #fff;
-	transition: background-color 0.5s ease;
+	transition: margin-left 10s linear, background-color 5s;
 }
 
-.btn1:hover {
-	padding: 24px;
-	background: green;
+.btn1a {
+	transition: margin-left 10s ease;
+}
+
+.active .btn1, .active .btn1a {
+/*	padding: 24px;
+*/	background: green;
+	margin-left: 300px;
 }
 
 /* Button 2 */
