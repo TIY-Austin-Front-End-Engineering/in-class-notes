@@ -1,0 +1,24 @@
+html {
+	font-size: 2em;
+}
+
+div {
+	background: #999;
+	margin-bottom: 20px;
+}
+div.pixels {
+	width: 320px;
+}
+
+div.ems {
+	width: 20em;
+	font-size: 0.75em;
+}
+
+div.ems span {
+	font-size: 0.5em;
+}
+
+div.rems {
+	width: 20rem;
+}
