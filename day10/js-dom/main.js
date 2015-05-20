@@ -21,3 +21,4 @@ myDivs[0].style.fontWeight = 'bold';
 myDivs[1].style.color = 'green';
 
 // Change the class of an element
+myBar.className = 'a-cool-class';
