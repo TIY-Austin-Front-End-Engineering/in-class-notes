@@ -1,0 +1,27 @@
+{
+  "name": "Todo-List",
+  "version": "0.0.1",
+  "homepage": "https://github.com/alarner/in-class-notes",
+  "authors": [
+    "Aaron Larner <anlarner@gmail.com>"
+  ],
+  "description": "A todo list to track my daily tasks",
+  "main": "index.html",
+  "keywords": [
+    "todo",
+    "jquery",
+    "JavaScript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "backbone": "~1.2.0"
+  }
+}
