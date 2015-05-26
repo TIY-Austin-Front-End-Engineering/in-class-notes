@@ -28,7 +28,6 @@ function start(e) {
 	function toggleTodo(e) {
 		var id = e.target.id;
 		list[id].finished = !list[id].finished;
-		console.log(list);
 		var listHtml = render(list);
 		$list.html(listHtml);
 	}
