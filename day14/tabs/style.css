@@ -1,9 +1,9 @@
 nav {
-	overflow: hidden;
+	float: left;
+	margin-right: 2em;
 }
 nav a {
 	display: block;
-	float: left;
 	padding: 0.5em 0.75em;
 }
 
@@ -11,6 +11,17 @@ nav a {
 	background: yellow;
 }
 
+
+main {
+	float: left;
+	width: 30em;
+}
+
 main section {
 	display: none;
+}
+
+.tabs, .form {
+	overflow: hidden;
+	clear: both;
 }
