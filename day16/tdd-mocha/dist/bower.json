@@ -1,0 +1,22 @@
+{
+  "name": "dist",
+  "version": "0.0.0",
+  "homepage": "https://github.com/alarner/tdd-mocha",
+  "authors": [
+    "Aaron Larner <anlarner@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "chai": "~2.3.0"
+  },
+  "dependencies": {
+    "validator-js": "~3.40.0"
+  }
+}
