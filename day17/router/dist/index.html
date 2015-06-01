@@ -5,11 +5,16 @@
 </head>
 <body>
 	<nav>
-		<a href="#" id="a-link">home</a>
-		<a href="#" id="b-link">about</a>
-		<a href="#" id="c-link">projects</a>
-		<a href="#" id="d-link">profile</a>
+		<a href="#home" id="a-link">projects</a>
+		<a href="#about" id="b-link">about</a>
+		<a href="#projects" id="c-link">projects</a>
+		<a href="#profile/aaron" id="d-link">profile</a>
+		<a href="#blog/coding/how-I-learned-the-backbone-router" id="d2-link">blog</a>
 	</nav>
+	<section>
+		<input type="text" id="profile">
+		<button type="button" id="profile-button">Go To Profile</button>
+	</section>
 	<main>
 		<div class="page" id="a">
 			<h1>Home</h1>
@@ -24,13 +29,18 @@
 			<h1>Profile</h1>
 			<h2 id="name"></h2>
 		</div>
+		<div class="page" id="d2">
+			<h1>Blog</h1>
+			<h3 id="category"></h3>
+			<h2 id="title"></h2>
+		</div>
 		<div class="page" id="e">
 			<h1>Page Not Found</h1>
 		</div>
 	</main>
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
 	<script type="text/javascript" src="bower_components/backbone/backbone-min.js"></script>
-	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>
