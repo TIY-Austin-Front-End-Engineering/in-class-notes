@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IMDB App</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+	<nav>
+		<a href="#search">Search</a>
+		<a href="#home">Home</a>
+	</nav>
+
+	<section class="page" id="home"></section>
+
+	<section class="page" id="search">
+		<div id="results">Results</div>
+	</section>
+
+	<script type="text/template" id="movie-row">
+		<div class="movie-row">
+			<div><%= Title %></div>
+			<div><%= Year %></div>
+			<div><%= imdbID %></div>
+			<div><%= Type %></div>
+		</div>
+	</script>
+
+
+	
+	<script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
+	<script type="text/javascript" src="bower_components/backbone/backbone-min.js"></script>
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>

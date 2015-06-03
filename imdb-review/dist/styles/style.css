@@ -1,0 +1,7 @@
+.movie-row {
+	overflow: hidden;
+}
+.movie-row div {
+	float: left;
+	margin-right: 0.5em;
+}
