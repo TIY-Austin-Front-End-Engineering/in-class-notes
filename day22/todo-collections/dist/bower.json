@@ -1,0 +1,29 @@
+{
+  "name": "todo-list",
+  "version": "0.0.0",
+  "homepage": "https://github.com/alarner/in-class-notes",
+  "authors": [
+    "Aaron Larner <anlarner@gmail.com>"
+  ],
+  "description": "A simple todo list with backbone models and collections",
+  "main": "index.html",
+  "keywords": [
+    "JavaScript",
+    "Backbone",
+    "model",
+    "collections",
+    "todo"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "backbone": "~1.2.1"
+  }
+}

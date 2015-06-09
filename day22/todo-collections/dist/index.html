@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo Collections</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+    <form id="todo-form">
+        <input type="text" id="item-input"> 
+        <select id="priority-select">P
+            <option selected>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+        </select>
+        <button>Add</button>
+    </form>
+
+    <div id="my-list">
+        
+    </div>
+
+
+    <script type="text/template" id="list-template">
+        <div class="<%= priority %>">
+            <input type="checkbox">
+            <span><%= item %></span> 
+        </div>
+    </script>
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
+    <script type="text/javascript" src="bower_components/backbone/backbone-min.js"></script>
+    <script type="text/javascript" src="scripts/models/TodoModel.js"></script>
+    <script type="text/javascript" src="scripts/collections/TodoCollection.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>

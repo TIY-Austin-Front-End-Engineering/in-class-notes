@@ -1,0 +1,14 @@
+{
+    "name": "github-profile",
+    "version": "0.0.1",
+    "title": "GitHub Profile",
+    "description": "Mimic the behavior of a GitHub-like profile page. When the username is changed, the change should be reflected in the UI.",
+    "difficultyModes": [
+        "Normal",
+        "Hard"
+    ],
+    "keywords": [
+        "JavaScript",
+        "models"
+    ]
+}
