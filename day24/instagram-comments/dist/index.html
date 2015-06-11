@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form id="add-image-form">
+		<input type="text" id="image-url-input">
+		<textarea id="image-caption-input"></textarea>
+		<button type="submit">Add Image</button>
+	</form>
+	<section id="image-list">
+	</section>
+	<script type="text/template" id="image-row-template">
+		<div class="image-row" data-cid="<%= model.cid %>">
+			<img src="<%= model.get('url') %>">
+			<div class="image-caption">
+				<%= model.get('caption') %>
+			</div>
+			<div class="comment-list"></div>
+			<form class="comment-form" data-form-cid="<%= model.cid %>">
+				<input type="text" class="comment-input">
+				<button type="submit">Add Comment</button>
+			</form>
+		</div>
+	</script>
+	<script type="text/template" id="comment-row-template">
+		<div class="comment-row">
+			<%= model.get('text') %>
+		</div>
+	</script>
+	<script type="text/javascript" src="scripts/all.js"></script>
+</body>
+</html>
