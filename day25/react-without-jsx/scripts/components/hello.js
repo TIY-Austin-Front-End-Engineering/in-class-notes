@@ -6,7 +6,7 @@ module.exports = React.createClass({
 		return (
 			React.createElement(
 				'ul',
-				{className: "commentBox"},
+				{className: "commentBox", id: 'hello-list'},
 				[
 					React.createElement(
 						'li',
@@ -17,9 +17,26 @@ module.exports = React.createClass({
 						'li',
 						{},
 						'World'
+					),
+					React.createElement(
+						'li',
+						{},
+						[
+							React.createElement(
+								'strong',
+								{},
+								'!!!!!'
+							)
+						]
 					)
 				]
 			)
 		);
 	}
 });
+
+// <ul class="commentBox" id="hello-list">
+// 	<li>Hello</li>
+//	<li>World</li>
+//	<li><strong>!!!!!</strong></li>
+// </ul>
