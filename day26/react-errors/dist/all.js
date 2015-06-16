@@ -32470,7 +32470,7 @@ var ItemComponent = require('./components/ItemComponent.js');
 // console.log('application running');
 // console.log(ItemModel);
 
-React.render(React.createElement(ItemComponent, null), document.getElementById('container'));
+React.render(React.createElement(ItemComponent, null), document.getElementById('container1'));
 
 },{"./components/ItemComponent.js":160,"./models/ItemModel":162,"react":159}],162:[function(require,module,exports){
 'use strict';

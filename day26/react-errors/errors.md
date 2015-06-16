@@ -26,3 +26,6 @@ checking terminal we see...
 
 I've forgotten to close a tag in `/Users/alarner/Projects/TIY/in-class-notes/day26/react-errors/scripts/components/ItemComponent.js` on line `5`.
 
+# Uncaught Error: Invariant Violation: _registerComponent(...): Target container is not a DOM element.
+
+You are probably calling React.render and the second argument that you are passing in is not a HTML element or trying to reference an element that doesn't exist.

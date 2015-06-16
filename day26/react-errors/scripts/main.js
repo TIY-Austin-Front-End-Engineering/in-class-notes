@@ -7,5 +7,5 @@ var ItemComponent = require('./components/ItemComponent.js');
 
 React.render(
 	<ItemComponent />,
-	document.getElementById('container')
+	document.getElementById('container1')
 )
