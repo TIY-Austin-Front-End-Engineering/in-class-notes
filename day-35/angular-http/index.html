@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="basic">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    </head>
+    <body>
+        <div ng-controller="BasicCtrl">
+            <input type="text" ng-model="todo">
+            <button ng-click="addTodo(todo)">add todo</button>
+            <ul>
+                <li ng-repeat="todo in todoItems" ng-click="toggleFinished(todo)">
+                    <span ng-bind="todo.text" ng-class="todo.finished ? 'finished' : 'not-finished'"></span>
+                </li>
+            </ul>
+		</div>
+
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="scripts/services.js"></script>
+        <script type="text/javascript" src="scripts/controllers.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
+    </body>
+</html>

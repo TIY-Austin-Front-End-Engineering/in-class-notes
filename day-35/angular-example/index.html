@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="basic">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    </head>
+    <body>
+        <nav>
+            {{ username }}
+        </nav>
+        <div ng-controller="BasicCtrl">
+			<!-- <input type="text" ng-model="name">
+			<div ng-bind="name"></div>
+			<div>Hello, {{ name }}</div>
+			<div ng-bind="myModel"></div> -->
+            <!-- <nav>
+                <a href="#" ng-click="tab=1">tab 1</a>
+                <a href="#" ng-click="tab=2">tab 2</a>
+                <a href="#" ng-click="tab=3">tab 3</a>
+                <a href="#" ng-click="tab=4">tab 4</a>
+                <a href="#" ng-click="tab=5">tab 5</a>
+            </nav>
+            <div ng-show="tab == 1">tab 1 content</div>
+            <div ng-show="tab == 2">tab 2 content</div>
+            <div ng-show="tab == 3">tab 3 content</div>
+            <div ng-show="tab == 4">tab 4 content</div>
+            <div ng-show="tab == 5">tab 5 content</div> -->
+            <input type="text" ng-model="todo">
+            <button ng-click="addTodo(todo)">add todo</button>
+            <ul>
+                <li ng-repeat="todo in todoItems" ng-click="todo.finished=!todo.finished">
+                    <span ng-bind="todo.text" ng-class="todo.finished ? 'finished' : 'not-finished'"></span>
+                </li>
+            </ul>
+            <input type="text" ng-model="username" ng-change="updateUsername(username)">
+            <span>{{name}}</span>
+		</div>
+        <hr>
+        <div ng-controller="names">
+            <input type="text" ng-model="name">
+            <input type="text" ng-model="name">
+            <div ng-bind="name"></div>
+            <button ng-click="name='hello'">click me</button>
+        </div>
+
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="scripts/services.js"></script>
+        <script type="text/javascript" src="scripts/controllers.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
+    </body>
+</html>
