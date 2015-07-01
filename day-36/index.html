@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Web components</title>
+		<link rel="import" href="like-button.html">
+		<style type="text/css">
+		body{
+			background: #e4e7ea;
+		}
+		.flex{
+			display: flex;
+			flex-wrap:wrap;
+		}
+		my-panel{
+			flex-grow:1;
+			margin:10px;
+		}
+		</style>
+	</head>
+	<body>
+
+
+		<div class="flex">
+			<my-panel>
+				<h2>Hey yo!</h2>
+				<h1>This is the title</h1>
+				<p>Hello there!</p><span>test</span>
+			</my-panel>
+
+			<my-panel>
+				<h2>Introduction</h2>
+				<h1>My custom panel</h1>
+				<p>This is the content of the panel, we can add anything we need!</p>
+			</my-panel>
+		</div>
+
+
+
+		<!-- THE WEB COMPONENT -->
+		<template>
+			<style>
+			#panel{
+				border-radius: 3px;
+				overflow: hidden;
+				font-family: 'Arial';
+			}
+			.panel-header{
+				padding: 10px 20px;
+				background-color: #1d2939;
+			}
+			.panel-header h1{
+				margin:0;
+				padding:0;
+				font-size: 8px;
+				line-height: 8px;
+				text-transform: uppercase;
+				color:#fff;
+			}
+			.panel-buttons span{
+				display: inline-block;
+				opacity: 0.2;
+				float:right;
+				color:#fff;
+				font-size: 16px;
+				transition: all 0.2s ease-out 0s;
+				cursor: pointer;
+				margin-top: 3px;
+			}
+			.panel-buttons span:hover{
+				opacity: 1;
+			}
+			.panel-body{
+				padding:5px 20px;
+				background-color: #fff;
+			}
+			</style>
+			<div id="panel">
+				<div class="panel-header">
+					<div class="panel-buttons">
+						<span class="collapse">^</span>
+					</div>
+					<h1><content select="h1"></content></h1>
+				</div>
+				<div class="panel-body">
+					<content></content>
+				</div>
+			</div>
+		</template>
+			
+			
+		<script>
+		// Create a prototype for a new element that extends HTMLElement
+		var Panel = Object.create(HTMLElement.prototype);
+		// Grab our template full of slider markup and styles
+		var tmpl = document.querySelector('template');
+		// Setup our Shadow DOM and clone the template
+		Panel.createdCallback = function() {
+			var root = this.createShadowRoot(),
+					close;
+			
+			root.appendChild(document.importNode(tmpl.content, true));
+			close = root.querySelector('.panel-buttons span.collapse');
+			
+			close.addEventListener('click',function(){
+				var body = root.querySelector('.panel-body');
+				if(body.style.display === 'none'){
+					body.style.display = 'block'
+				}else{
+					body.style.display = 'none';
+				}
+			},false);
+		};
+		// Register our new element
+		var MyPanel = document.registerElement('my-panel', {
+			prototype: Panel
+		});
+		</script>
+	</body>
+</html>

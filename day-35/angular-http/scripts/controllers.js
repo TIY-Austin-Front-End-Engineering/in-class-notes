@@ -1,5 +1,5 @@
 angular.module('basic.controllers', ['basic.services'])
-.controller('BasicCtrl', function($scope, $rootScope, Test, $http, $window) {
+.controller('BasicCtrl', function($scope, $rootScope, Test, $http) {
 	$scope.todoItems = [];
 
 	$http.get('http://tiny-pizza-server.herokuapp.com/collections/angular-todo')
@@ -34,7 +34,5 @@ angular.module('basic.controllers', ['basic.services'])
 			'http://tiny-pizza-server.herokuapp.com/collections/angular-todo/'+todo._id,
 			todo
 		);
-
-		$window.location = 'http://google.com';
 	}
 });

@@ -1,0 +1,25 @@
+{
+  "name": "angular-router",
+  "version": "1.0.0",
+  "description": "A basic starting template for angular apps.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.7.13",
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^0.10.0"
+  },
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "browser-sync": "^2.7.13",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^0.10.0",
+    "main-bower-files": "^2.8.2",
+    "wiredep": "^2.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

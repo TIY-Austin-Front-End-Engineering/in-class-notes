@@ -1,0 +1,43 @@
+<!-- THE WEB COMPONENT -->
+<template>
+	<style>
+		#like-button {
+			padding: 20px;
+			background: inherit;
+		}
+	</style>
+	<button id="like-button">
+
+	</button>
+</template>
+	
+	
+<script>
+// Create a prototype for a new element that extends HTMLElement
+var LikeButton = Object.create(HTMLElement.prototype);
+// Grab our template full of slider markup and styles
+var tmpl = document.querySelector('template');
+// Setup our Shadow DOM and clone the template
+LikeButton.createdCallback = function() {
+	console.log(this.getAttribute('startsat'));
+	var numLikes = parseInt(this.getAttribute('startsat'));
+	var root = this.createShadowRoot();
+	
+	root.appendChild(document.importNode(tmpl.content, true));
+
+	var buttonEl = root.querySelector('#like-button');
+
+	buttonEl.innerHTML = numLikes + ' Like' + (numLikes === 1 ? '' : 's');
+
+	buttonEl.addEventListener('click', function(e) {
+		numLikes++;
+
+		buttonEl.innerHTML = numLikes + ' Like' + (numLikes === 1 ? '' : 's');
+	});
+
+};
+// Register our new element
+var likeButton = document.registerElement('like-button', {
+	prototype: LikeButton
+});
+</script>
