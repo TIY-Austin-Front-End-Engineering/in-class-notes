@@ -1,6 +1,37 @@
 var exampleTree = {
 	name: 'root',
 	value: 7,
+	children: []
+}
+
+var exampleTree = {
+	name: 'root',
+	value: 7,
+	children: [
+		{
+			name: 'hello',
+			value: 1,
+			children: []
+		}
+	]
+}
+
+var exampleTree = {
+	name: 'root',
+	value: 7,
+	children: [
+		{
+			name: 'root',
+			value: 1,
+			children: []
+		}
+	]
+}
+
+
+var exampleTree = {
+	name: 'root',
+	value: 7,
 	children: [
 		{
 			name: 'foo',

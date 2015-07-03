@@ -5,4 +5,13 @@ export var hello = {
 	twitter: 'bird'
 };
 
-// export hello;
+export default 'test';
+
+// export default ...
+
+// module.exports = {
+// 	test: 22,
+// 	hello: {
+// 		...
+// 	}
+// }
